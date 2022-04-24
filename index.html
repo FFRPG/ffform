@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="FFRPG,Minecraft,サーバー,統合版,RPG">
+    <meta name="Description" content="統合版向けのRPGサーバーです 完成は22/6/1(水)を予定しています">
+    <link rel="icon" href="icon.png">
+    <title>FFRPGサーバー|Form</title>
+<body>
+    <form action="http://localhost/confirm.php" method="post" action="index.html">
+        <p style="color:red;">名前(Discord)*</p>
+        <input type="text" maxlength="16" placeholder="Discordでの名前" id="Dname" name="Dname">
+        <a href="https://discord.gg/EpRjTQBudF" target="_blank">Discordはこちら</a>
+        <p style="color:red;">名前(Minecraft)*</p>
+        <input type="text" maxlength="30" placeholder="マイクラ内での名前" id="Mname" name="Mname">
+        <p>メールアドレス(回答送信時に使います。未記入の場合はDiscordのDMに送ります)</p>
+        <input type="email" placeholder="XXXXXXXXX@XXX.XXX" id="mail" name="mail">
+        <p style="color:red;">要件*</p>
+        <input type="text" maxlength="10" placeholder="件名" id="youken" name="youken">
+        <p style="color:red;">内容*</p>
+        <textarea placeholder="内容を入力してください" id="naiyou" wrap="hard" name="naiyou"></textarea>
+        <p style="color:red;">*は必須入力</p>
+        <p><input type="submit" value="送信" id="soushin"></p>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
